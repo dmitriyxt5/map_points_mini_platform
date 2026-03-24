@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Установка зависимостей
-pip install -r requirements.txt
+# 1. Устанавливаем зависимости
+python3 -m pip install -r requirements.txt
 
-# Сборка статики
-python3.12 manage.py collectstatic --noinput
+# 2. Собираем статику
+python3 manage.py collectstatic --noinput
