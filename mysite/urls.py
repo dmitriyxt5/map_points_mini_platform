@@ -7,7 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# Этот код заставит Django отдавать медиа и локально, и на сервере при DEBUG=False
 urlpatterns += [
     re_path(r'^media/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT,
